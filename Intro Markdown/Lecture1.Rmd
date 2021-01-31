@@ -1,0 +1,163 @@
+---
+title: "Competition Policy"
+author:  "Misja Mikkers"
+date: "Competition Policy 2021"
+output:
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "beaver"
+    fonttheme: "structurebold"
+    slide_level: 3
+    includes:
+         in_header: header.tex
+institute: Tilburg University
+shortdate: Competition Policy 2021
+shorttitle: Basics Markdown 
+subtitle: Session 1. Introduction to markdown
+classoption: aspectratio=169
+---
+
+
+
+# Markdown
+
+### What is Markdown?
+
+  - Markdown is a markup language for creating documents.
+    - Simple Syntax (see below)
+    - Can be converted to different documents (e.g. pdf, html, word,...).
+    - Used by R, Jupyter, Gihub, etc...
+    - Think of it as a streamlined version of latex.
+    - We made this presentation using Markdown!
+
+### How to work with markdown
+
+  - R Studio supports R-Markdown.
+  - Consists of a markdown file ('*.Rmd').
+  - Very good documentation [https://rmarkdown.rstudio.com](https://rmarkdown.rstudio.com)
+  - Can be knitted in R Studio or converted using pandoc.
+
+
+### Anatomy of a markdown file
+
+```
+---
+title: "My Document"
+output: html_document
+author: "name"
+date: "date"
+---
+```
+- multitude of options:
+  - ```output: beamer_presentation, word_document, pdf_document```
+  - See documentation for more
+- preamble followed by content
+  
+
+### Headers
+
+```
+# Header 1
+
+## Header 1.1
+
+### Header 1.1.1
+```
+
+### Lists
+
+```
+1. item 1
+2. item 2
+
+- item 1
+  - subitem
+- item 2
+```
+
+### Formatting
+
+```
+**bold**, *italic*, `monospace`, 
+```
+
+**bold**, *italic*, `monospace`
+
+### Tables
+
+```
+|city      |population|
+|----------|----------|
+|Tilburg   |   211648 |
+|Amsterdam |   821752 |
+```
+This gives:
+
+|city      |population|
+|----------|----------|
+|Tilburg   |   211648 |
+|Amsterdam |   821752 |
+
+### Formulas
+
+- Markdown allows to use Latex code for formulas:
+
+```
+in-line formula: $f(x)  = a_0 + a_1 x + a_2 x^2$
+```
+
+in-line formula:  $f(x)  = a_0 + a_1 x + a_2 x^2$
+
+or below text:
+```
+\[2 = \lim_{n\righarrow \infty} \sum_{i=0}^n\frac{1}{2^i}\]
+```
+
+\[2 = \lim_{n\rightarrow \infty} \sum_{i=0}^n\frac{1}{2^i}\]
+
+
+### Inclusions
+
+```
+link:  [link](www.link.com)
+image: ![Image](image.png "image")
+```
+
+### Including R code
+
+- R markdown also allows to directly include r code
+
+```{r, echo=FALSE, out.width = '40%'}
+attach(mtcars)
+
+plot(wt, mpg, main="Scatterplot Example", 
+   xlab="Car Weight ", ylab="Miles Per Gallon ")
+```
+
+# Git & Github
+
+
+### Git
+
+- Git is a language to track versions of documents. (distributed version control system)
+- Imagine working on a word document for a long time.
+  - How do you make sure to know what you did?
+  - You'd create periodical backups.
+  - But this is not very efficient!
+- Instead version management:
+  - Start with the initial commit.
+  - Whenever you change something git only saves the changes.
+  - You can access the current up-to-date document.
+  - You can also access any previous version.
+  - You see which line was changed!
+  
+### Github
+
+  - You can run git on your own computer
+  - or on specialized websites:
+    - Github most popular. [https://github.com](https://github.com) 
+    - many alternatives: [https://about.gitlab.com](https://about.gitlab.com) [https://bitbucket.org](https://bitbucket.org)
+    - Github offers education accounts [https://education.github.com](https://education.github.com)
+    
+
+

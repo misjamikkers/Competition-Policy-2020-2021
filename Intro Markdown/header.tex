@@ -1,0 +1,30 @@
+
+\setbeamertemplate{navigation symbols}{\insertlogo}
+
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{eurosym}
+
+
+
+
+ \usepackage[utf8]{inputenc}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+
+
+
+
+\addtobeamertemplate{footline}{}{%
+	\makebox[\paperwidth]{%
+	%	\hspace{0.04\textwidth}\raisebox{2ex}[0pt][0pt]{\includegraphics[width=1cm,keepaspectratio]{logo}}%
+		\hfill{}%
+		
+		\raisebox{5ex}[0pt][0pt]{\includegraphics[width=1cm,keepaspectratio]{figures/logo}}\hspace{0.01\textwidth}%
+	}%
+}
+
+\AtBeginPart{}
+\AtBeginSection{}
+\AtBeginSubsection{}
+\AtBeginSubsubsection{}
