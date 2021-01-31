@@ -1,0 +1,491 @@
+"Country";"Year";"Expenses";"Life_expectancy"
+"Australia";2002;2426;80
+"Austria";2002;2929;78,8
+"Belgium";2002;2519;78,2
+"Canada";2002;2742;79,4
+"Chile";2002;749;77,2
+"Czech Republic";2002;1128;75,4
+"Denmark";2002;2666;77,1
+"Estonia";2002;549;71,4
+"Finland";2002;2102;78,3
+"France";2002;2866;79,4
+"Germany";2002;2998;78,5
+"Greece";2002;1862;79,2
+"Hungary";2002;1034;72,5
+"Iceland";2002;3086;80,6
+"Ireland";2002;2350;77,7
+"Israel";2002;1803;79,5
+"Italy";2002;2261;80,3
+"Japan";2002;2105;81,8
+"Korea";2002;913;76,8
+"Latvia";2002;581;70,1
+"Luxembourg";2002;4124;78,1
+"Mexico";2002;558;73,6
+"Netherlands";2002;2704;78,4
+"New Zealand";2002;1841;79
+"Norway";2002;3418;79
+"Poland";2002;716;74,6
+"Portugal";2002;1743;77,4
+"Slovak Republic";2002;733;73,8
+"Slovenia";2002;1624;76,6
+"Spain";2002;1657;79,9
+"Sweden";2002;2558;79,9
+"Switzerland";2002;4014;80,6
+"Turkey";2002;470;71,9
+"United Kingdom";2002;1897;78,3
+"United States";2002;5326;77
+"Australia";2003;2545;80,3
+"Austria";2003;3065;78,7
+"Belgium";2003;2808;78,2
+"Canada";2003;2914;79,6
+"Chile";2003;794;77,2
+"Czech Republic";2003;1273;75,3
+"Denmark";2003;2741;77,4
+"Estonia";2003;638;71,8
+"Finland";2003;2221;78,5
+"France";2003;2845;79,3
+"Germany";2003;3136;78,6
+"Greece";2003;1957;79,3
+"Hungary";2003;1255;72,6
+"Iceland";2003;3254;81
+"Ireland";2003;2540;78,2
+"Israel";2003;1689;79,7
+"Italy";2003;2284;80,1
+"Japan";2003;2203;81,8
+"Korea";2003;997;77,3
+"Latvia";2003;605;70,5
+"Luxembourg";2003;4361;77,8
+"Mexico";2003;643;73,8
+"Netherlands";2003;2850;78,7
+"New Zealand";2003;1850;79,3
+"Norway";2003;3552;79,6
+"Poland";2003;731;74,7
+"Portugal";2003;1855;77,5
+"Slovak Republic";2003;772;73,8
+"Slovenia";2003;1708;76,4
+"Spain";2003;1887;79,7
+"Sweden";2003;2664;80,3
+"Switzerland";2003;4124;80,6
+"Turkey";2003;481;72,3
+"United Kingdom";2003;2058;78,4
+"United States";2003;5735;77,1
+"Australia";2004;2749;80,6
+"Austria";2004;3277;79,3
+"Belgium";2004;2920;79
+"Canada";2004;3076;79,8
+"Chile";2004;815;77,2
+"Czech Republic";2004;1329;75,8
+"Denmark";2004;2965;77,8
+"Estonia";2004;735;72,4
+"Finland";2004;2425;79
+"France";2004;2960;80,3
+"Germany";2004;3208;79,2
+"Greece";2004;2018;79,4
+"Hungary";2004;1261;73
+"Iceland";2004;3371;81,1
+"Ireland";2004;2795;78,6
+"Israel";2004;1773;80,2
+"Italy";2004;2412;80,9
+"Japan";2004;2326;82,1
+"Korea";2004;1065;77,8
+"Latvia";2004;761;70,8
+"Luxembourg";2004;4905;79,2
+"Mexico";2004;692;73,9
+"Netherlands";2004;3019;79,2
+"New Zealand";2004;1982;79,6
+"Norway";2004;3751;80,1
+"Poland";2004;783;74,9
+"Portugal";2004;1997;78,4
+"Slovak Republic";2004;985;74,2
+"Slovenia";2004;1806;77,2
+"Spain";2004;1995;80,4
+"Sweden";2004;2771;80,6
+"Switzerland";2004;4312;81,2
+"Turkey";2004;534;72,7
+"United Kingdom";2004;2237;79
+"United States";2004;6094;77,6
+"Australia";2005;2842;80,9
+"Austria";2005;3371;79,4
+"Belgium";2005;2989;79,1
+"Canada";2005;3282;80
+"Chile";2005;841;77,6
+"Czech Republic";2005;1401;76,1
+"Denmark";2005;3104;78,3
+"Estonia";2005;819;72,9
+"Finland";2005;2559;79,1
+"France";2005;3124;80,4
+"Germany";2005;3314;79,4
+"Greece";2005;2301;79,7
+"Hungary";2005;1366;73
+"Iceland";2005;3406;81,6
+"Ireland";2005;3093;79
+"Israel";2005;1769;80,2
+"Italy";2005;2513;80,9
+"Japan";2005;2464;82
+"Korea";2005;1183;78,2
+"Latvia";2005;812;70,6
+"Luxembourg";2005;5126;79,5
+"Mexico";2005;731;74
+"Netherlands";2005;3455;79,5
+"New Zealand";2005;2124;79,8
+"Norway";2005;3981;80,3
+"Poland";2005;807;75,1
+"Portugal";2005;2145;78,2
+"Slovak Republic";2005;1096;74,2
+"Slovenia";2005;1907;77,4
+"Spain";2005;2127;80,3
+"Sweden";2005;2812;80,7
+"Switzerland";2005;4391;81,4
+"Turkey";2005;583;73,1
+"United Kingdom";2005;2331;79,2
+"United States";2005;6443;77,6
+"Australia";2006;3026;81,1
+"Austria";2006;3586;80
+"Belgium";2006;3137;79,5
+"Canada";2006;3499;80,3
+"Chile";2006;951;78
+"Czech Republic";2006;1473;76,7
+"Denmark";2006;3420;78,4
+"Estonia";2006;947;73,1
+"Finland";2006;2751;79,5
+"France";2006;3369;81
+"Germany";2006;3515;79,8
+"Greece";2006;2557;79,9
+"Hungary";2006;1429;73,5
+"Iceland";2006;3452;81,2
+"Ireland";2006;3322;79,3
+"Israel";2006;1781;80,6
+"Italy";2006;2736;81,4
+"Japan";2006;2583;82,4
+"Korea";2006;1352;78,8
+"Latvia";2006;904;70,6
+"Luxembourg";2006;5494;79,4
+"Mexico";2006;772;74,1
+"Netherlands";2006;3728;79,9
+"New Zealand";2006;2397;80,1
+"Norway";2006;4282;80,6
+"Poland";2006;878;75,3
+"Portugal";2006;2253;79
+"Slovak Republic";2006;1295;74,4
+"Slovenia";2006;2010;78,3
+"Spain";2006;2390;81,1
+"Sweden";2006;3054;81
+"Switzerland";2006;4608;81,7
+"Turkey";2006;701;73,4
+"United Kingdom";2006;2528;79,5
+"United States";2006;6807;77,8
+"Australia";2007;3196;81,4
+"Austria";2007;3754;80,3
+"Belgium";2007;3277;79,9
+"Canada";2007;3667;80,4
+"Chile";2007;1047;77,5
+"Czech Republic";2007;1571;77
+"Denmark";2007;3633;78,4
+"Estonia";2007;1104;73,2
+"Finland";2007;2950;79,6
+"France";2007;3516;81,2
+"Germany";2007;3690;80,1
+"Greece";2007;2654;79,7
+"Hungary";2007;1374;73,6
+"Iceland";2007;3552;81,5
+"Ireland";2007;3648;79,7
+"Israel";2007;1903;80,6
+"Italy";2007;2775;81,5
+"Japan";2007;2722;82,6
+"Korea";2007;1509;79,2
+"Latvia";2007;1004;70,8
+"Luxembourg";2007;5513;79,5
+"Mexico";2007;822;74,2
+"Netherlands";2007;4015;80,3
+"New Zealand";2007;2445;80,3
+"Norway";2007;4498;80,6
+"Poland";2007;986;75,4
+"Portugal";2007;2330;79,2
+"Slovak Republic";2007;1521;74,5
+"Slovenia";2007;2069;78,3
+"Spain";2007;2554;81,2
+"Sweden";2007;3276;81,1
+"Switzerland";2007;4982;82
+"Turkey";2007;778;73,7
+"United Kingdom";2007;2623;79,7
+"United States";2007;7160;78,1
+"Australia";2008;3310;81,5
+"Austria";2008;4018;80,5
+"Belgium";2008;3536;79,8
+"Canada";2008;3812;80,6
+"Chile";2008;1114;78,1
+"Czech Republic";2008;1771;77,3
+"Denmark";2008;3926;78,8
+"Estonia";2008;1304;74,2
+"Finland";2008;3231;79,9
+"France";2008;3686;81,4
+"Germany";2008;3926;80,2
+"Greece";2008;2895;80,3
+"Hungary";2008;1469;74,2
+"Iceland";2008;3720;81,7
+"Ireland";2008;4031;80,2
+"Israel";2008;1918;81
+"Italy";2008;3031;81,6
+"Japan";2008;2853;82,7
+"Korea";2008;1635;79,6
+"Latvia";2008;1093;72
+"Luxembourg";2008;5980;80,6
+"Mexico";2008;847;74,1
+"Netherlands";2008;4360;80,5
+"New Zealand";2008;2721;80,5
+"Norway";2008;4913;80,8
+"Poland";2008;1167;75,7
+"Portugal";2008;2491;79,5
+"Slovak Republic";2008;1650;75
+"Slovenia";2008;2325;79,1
+"Spain";2008;2774;81,5
+"Sweden";2008;3479;81,3
+"Switzerland";2008;5338;82,2
+"Turkey";2008;837;73,9
+"United Kingdom";2008;2785;79,8
+"United States";2008;7403;78,1
+"Australia";2009;3563;81,6
+"Austria";2009;4184;80,4
+"Belgium";2009;3799;80,1
+"Canada";2009;4102;80,8
+"Chile";2009;1166;78,2
+"Czech Republic";2009;2012;77,4
+"Denmark";2009;4305;79
+"Estonia";2009;1341;75,2
+"Finland";2009;3356;80,1
+"France";2009;3917;81,5
+"Germany";2009;4198;80,3
+"Greece";2009;2875;80,4
+"Hungary";2009;1497;74,4
+"Iceland";2009;3715;81,8
+"Ireland";2009;4364;80,3
+"Israel";2009;1950;81,5
+"Italy";2009;3098;81,7
+"Japan";2009;3007;83
+"Korea";2009;1732;80
+"Latvia";2009;1038;72,6
+"Luxembourg";2009;6455;80,7
+"Mexico";2009;889;74
+"Netherlands";2009;4508;80,8
+"New Zealand";2009;2955;80,7
+"Norway";2009;5024;81
+"Poland";2009;1268;75,8
+"Portugal";2009;2614;79,7
+"Slovak Republic";2009;1834;75,3
+"Slovenia";2009;2352;79,3
+"Spain";2009;2911;81,9
+"Sweden";2009;3546;81,5
+"Switzerland";2009;5595;82,3
+"Turkey";2009;849;74,1
+"United Kingdom";2009;2949;80,4
+"United States";2009;7681;78,5
+"Australia";2010;3611;81,8
+"Austria";2010;4298;80,7
+"Belgium";2010;3945;80,3
+"Canada";2010;4225;81,1
+"Chile";2010;1232;78
+"Czech Republic";2010;1919;77,7
+"Denmark";2010;4448;79,3
+"Estonia";2010;1368;75,9
+"Finland";2010;3439;80,2
+"France";2010;4037;81,8
+"Germany";2010;4397;80,5
+"Greece";2010;2694;80,7
+"Hungary";2010;1621;74,7
+"Iceland";2010;3380;82
+"Ireland";2010;4552;80,8
+"Israel";2010;2033;81,7
+"Italy";2010;3138;82,1
+"Japan";2010;3205;82,9
+"Korea";2010;1896;80,2
+"Latvia";2010;1081;73
+"Luxembourg";2010;6456;80,7
+"Mexico";2010;911;74,1
+"Netherlands";2010;4634;81
+"New Zealand";2010;2998;80,8
+"Norway";2010;5163;81,2
+"Poland";2010;1352;76,5
+"Portugal";2010;2684;80
+"Slovak Republic";2010;1949;75,6
+"Slovenia";2010;2386;79,8
+"Spain";2010;2883;82,4
+"Sweden";2010;3533;81,6
+"Switzerland";2010;5683;82,6
+"Turkey";2010;872;74,3
+"United Kingdom";2010;3040;80,6
+"United States";2010;7940;78,6
+"Australia";2011;3794;82
+"Austria";2011;4457;81,1
+"Belgium";2011;4130;80,7
+"Canada";2011;4252;81,3
+"Chile";2011;1376;78,7
+"Czech Republic";2011;2009;78
+"Denmark";2011;4508;79,9
+"Estonia";2011;1429;76,4
+"Finland";2011;3641;80,6
+"France";2011;4207;82,3
+"Germany";2011;4575;80,5
+"Greece";2011;2378;80,8
+"Hungary";2011;1723;75
+"Iceland";2011;3364;82,4
+"Ireland";2011;4835;80,8
+"Israel";2011;2140;81,7
+"Italy";2011;3211;82,3
+"Japan";2011;3798;82,7
+"Korea";2011;1968;80,6
+"Latvia";2011;1102;73,7
+"Luxembourg";2011;5750;81,1
+"Mexico";2011;942;74,2
+"Netherlands";2011;4846;81,3
+"New Zealand";2011;3113;81
+"Norway";2011;5456;81,4
+"Poland";2011;1424;76,8
+"Portugal";2011;2552;80,6
+"Slovak Republic";2011;1917;76,1
+"Slovenia";2011;2470;80,1
+"Spain";2011;2915;82,6
+"Sweden";2011;4673;81,9
+"Switzerland";2011;6050;82,8
+"Turkey";2011;912;74,6
+"United Kingdom";2011;3083;81
+"United States";2011;8150;78,7
+"Australia";2012;3805;82,1
+"Austria";2012;4738;81
+"Belgium";2012;4289;80,5
+"Canada";2012;4316;81,5
+"Chile";2012;1506;78,7
+"Czech Republic";2012;2042;78,2
+"Denmark";2012;4589;80,1
+"Estonia";2012;1516;76,5
+"Finland";2012;3774;80,7
+"France";2012;4276;82,1
+"Germany";2012;4691;80,6
+"Greece";2012;2246;80,7
+"Hungary";2012;1724;75,2
+"Iceland";2012;3436;83
+"Ireland";2012;4996;80,9
+"Israel";2012;2265;81,8
+"Italy";2012;3245;82,3
+"Japan";2012;4014;83,2
+"Korea";2012;2066;80,9
+"Latvia";2012;1152;73,9
+"Luxembourg";2012;6168;81,5
+"Mexico";2012;1006;74,4
+"Netherlands";2012;5093;81,2
+"New Zealand";2012;3184;81,2
+"Norway";2012;5737;81,5
+"Poland";2012;1478;76,9
+"Portugal";2012;2473;80,5
+"Slovak Republic";2012;2034;76,2
+"Slovenia";2012;2531;80,2
+"Spain";2012;2903;82,5
+"Sweden";2012;4892;81,8
+"Switzerland";2012;6397;82,8
+"Turkey";2012;917;74,6
+"United Kingdom";2012;3144;81
+"United States";2012;8421;78,8
+"Australia";2013;4180;82,2
+"Austria";2013;4929;81,2
+"Belgium";2013;4479;80,7
+"Canada";2013;4469;81,7
+"Chile";2013;1646;79,5
+"Czech Republic";2013;2380;78,3
+"Denmark";2013;4752;80,4
+"Estonia";2013;1652;77,3
+"Finland";2013;3920;81,1
+"France";2013;4534;82,3
+"Germany";2013;4937;80,6
+"Greece";2013;2196;81,4
+"Hungary";2013;1776;75,7
+"Iceland";2013;3630;82,1
+"Ireland";2013;4951;81
+"Israel";2013;2427;82,1
+"Italy";2013;3235;82,8
+"Japan";2013;4207;83,4
+"Korea";2013;2145;81,4
+"Latvia";2013;1224;74,1
+"Luxembourg";2013;6413;81,9
+"Mexico";2013;1038;74,6
+"Netherlands";2013;5303;81,4
+"New Zealand";2013;3392;81,4
+"Norway";2013;5979;81,8
+"Poland";2013;1576;77,1
+"Portugal";2013;2536;80,8
+"Slovak Republic";2013;2100;76,5
+"Slovenia";2013;2620;80,4
+"Spain";2013;2943;83,2
+"Sweden";2013;5070;82
+"Switzerland";2013;6801;82,9
+"Turkey";2013;978;78
+"United Kingdom";2013;3841;81,1
+"United States";2013;8620;78,8
+"Australia";2014;4300;82,4
+"Austria";2014;5060;81,6
+"Belgium";2014;4612;81,4
+"Canada";2014;4538;81,8
+"Chile";2014;1732;79,7
+"Czech Republic";2014;2469;78,9
+"Denmark";2014;4872;80,8
+"Estonia";2014;1772;77,2
+"Finland";2014;3931;81,3
+"France";2014;4666;82,8
+"Germany";2014;5160;81,2
+"Greece";2014;2134;81,5
+"Hungary";2014;1810;75,9
+"Iceland";2014;3785;82,9
+"Ireland";2014;4940;81,4
+"Israel";2014;2458;82,2
+"Italy";2014;3250;83,2
+"Japan";2014;4245;83,7
+"Korea";2014;2291;81,8
+"Latvia";2014;1301;74,3
+"Luxembourg";2014;6690;82,3
+"Mexico";2014;1021;74,8
+"Netherlands";2014;5278;81,8
+"New Zealand";2014;3511;81,5
+"Norway";2014;6158;82,2
+"Poland";2014;1600;77,7
+"Portugal";2014;2594;81,2
+"Slovak Republic";2014;1998;76,9
+"Slovenia";2014;2625;81,2
+"Spain";2014;3042;83,3
+"Sweden";2014;5183;82,3
+"Switzerland";2014;7115;83,3
+"Turkey";2014;1043;78
+"United Kingdom";2014;3958;81,4
+"United States";2014;9028;78,9
+"Australia";2015;4414;82,5
+"Austria";2015;5159;81,3
+"Belgium";2015;4589;81,1
+"Canada";2015;4633;81,9
+"Chile";2015;1803;79,9
+"Czech Republic";2015;2393;78,7
+"Denmark";2015;5001;80,8
+"Estonia";2015;1860;77,7
+"Finland";2015;4099;81,6
+"France";2015;4657;82,4
+"Germany";2015;5297;80,7
+"Greece";2015;2188;81,1
+"Hungary";2015;1862;75,7
+"Iceland";2015;3964;82,5
+"Ireland";2015;5106;81,5
+"Israel";2015;2647;82,1
+"Italy";2015;3292;82,6
+"Japan";2015;4428;83,9
+"Korea";2015;2482;82,1
+"Latvia";2015;1400;74,6
+"Luxembourg";2015;6497;82,4
+"Mexico";2015;1037;75
+"Netherlands";2015;5148;81,6
+"New Zealand";2015;3524;81,7
+"Norway";2015;6239;82,4
+"Poland";2015;1687;77,6
+"Portugal";2015;2650;81,2
+"Slovak Republic";2015;2027;76,7
+"Slovenia";2015;2675;80,9
+"Spain";2015;3175;82,9
+"Sweden";2015;5272;82,3
+"Switzerland";2015;7570;83
+"Turkey";2015;1029;78
+"United Kingdom";2015;4072;81
+"United States";2015;9491;78,7

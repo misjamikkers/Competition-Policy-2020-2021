@@ -1,0 +1,452 @@
+---
+title: "R Refreshment"
+author: "Misja Mikkers"
+output:
+  pdf_document: default
+  
+---
+
+# Introduction
+
+In this notebook we will refresh basic R knowlegde. During the course, we will give you data in a cleaned format. Which means that you don't have to do datacleaning. We will focus on the manipulation of data and plotting with the package `tidyverse`
+
+
+# Loading packages
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse) # for plotting and data wrangling
+library(ggrepel) # to have nice labels in plotting
+library(readxl) # reading excel files
+```
+
+# Reading data
+
+For this notebook, we have prepared a small csv-file from the OECD website. 
+Please note our folder structure:
+
+- Code
+- Data
+- Output
+
+
+```{r}
+d1 <- read.csv2("../Data/Oecd.csv", sep = ";")
+```
+
+
+We can inspect the data in different ways:
+
+We might want to check how the dataframe looks like:
+We can use the commands `head()` or `tail()` to inspect the dataframe
+
+```{r}
+head(d1)
+```
+
+We might want to check the structure of the data.
+
+```{r}
+str(d1)
+```
+
+In this case, we want all variables expect Country to be numeric:
+(REMEMBER: never convert a factor directly in a numeric! If you want to do that use `as.numeric(as.character())` to convert.)
+
+```{r}
+d1$Year <- as.numeric(d1$Year)
+d1$Expenses <- as.numeric(d1$Expenses)
+d1$Life_expectancy <- as.numeric(d1$Life_expectancy)
+
+str(d1)
+```
+
+# Manipulating data
+
+In package `dplyr`(part of the `tidyverse` package) there are 5 _verbs_ that are really important:
+
+1. `mutate()` creates new variables based on existing variables 
+2. `select()` selects variables (columns). `select` allows you to rename variables as well: 
+  `select(new_name = existing_name)`
+3. `filter()` selects observations (rows) based on a  logic test)
+4. `summarise()` reduces certain groups in a single value
+5. `arrange()` changes the order of the observations
+
+If you want guidance or help, you can use google or [this website](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html).
+
+## New variable
+
+Suppose we want to make a new variable "Nonsense" with the following formula:
+
+$$Nonsense = log \Bigg( \bigg (\frac{Life\_expectancy}{Expenses} \bigg) * \pi \Bigg)$$
+
+```{r}
+d2 <- d1 %>%
+  mutate(Nonsense = log((Life_expectancy / Expenses)* pi))
+
+head(d2)
+```
+
+# Selecting variables
+
+We can also deselect this new variable by selecting
+
+```{r}
+d2a <- d2 %>%
+  select(Country, Year, Expenses, Life_expectancy)
+
+head(d2a)
+```
+
+or be deselecting
+
+(we will deslect Life_expectancy)
+
+```{r}
+d2b <- d2 %>%
+  select(-Life_expectancy)
+
+head(d2b)
+```
+
+## Filter
+
+We can also "select" observations (rows) with filter. We can do that by logical conditions. 
+Suppose we only want the years 2009 and 2010.
+
+```{r}
+d3a <- d1 %>%
+  filter(Year >= 2009 & Year <=2010)
+
+summary(d3a)
+  
+```
+
+In this case we could have used
+
+```{r}
+d3b <- d1 %>%
+  filter(Year == 2009 | Year == 2010)
+summary(d3b)
+```
+
+## Summarising
+
+Sometimes you have to summarise things by group.
+
+Supposse we want the sum of the expenses in our dataset per country and the mean of the Life_expectancy
+
+```{r}
+d4 <- d1 %>%
+  group_by(Country) %>%
+  summarise(Sum_expenses = sum(Expenses), Mean_LE = mean(Life_expectancy)) 
+head(d4)
+```
+
+For help see e.g.
+
+[the data wrangling cheat sheet(https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+
+# Plotting
+
+## scatter plot
+
+We will plot 2015 only:
+
+```{r}
+d5 <- d1 %>%
+  filter(Year == 2015)
+  
+```
+
+We can now plot and save the plot:
+
+```{r}
+ggplot(data=d5, aes(x=Expenses, y=Life_expectancy, label = Country)) + geom_point(color = "red", shape =21) + # produces scatterplot
+geom_text_repel() +  # positions the labels
+geom_smooth(method = "lm") + # adds a regression line
+ylab("Life expectancy") + 
+  xlab("Health care cost per capita") + #changes labels x-axis and y-axis
+  theme_classic() # changes the background
+
+ggsave("../Output/plot.png")
+
+```
+
+
+For other graphs and help: please see:
+
+[the cookbook](http://www.cookbook-r.com/Graphs/)
+
+or
+
+[the ggplot cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+
+# Merging 
+
+
+
+## Introduction
+
+
+In many cases you need to merge data from two or more data frames. In this notebook we will show you how that can be done using only a few powerful commands.
+
+Commands that can be used for merging are:
+
+* `merge()`
+* `join()` (from package `dplyr`).
+* `rbind()`  en `cbind()`.
+
+
+
+
+
+
+## Dataframes
+
+First we construct two small `data.frame`'s. Because they are small, the effects of the different merge commands can be easily observed.
+
+
+```{r}
+
+# Run this code
+
+data1 <- data.frame(
+  Hospital = c("Gigant", "Moloch", "Mega"),
+  Revenue = c(100, 95, 90),
+  stringsAsFactors = FALSE
+)
+
+print(data1)
+
+
+```
+
+```{r}
+
+# Run this code 
+
+data2 <- data.frame(
+  Hospital = c("Gigant", "Moloch", "Maverick"),
+  Profit = c(10, 11, 5),
+  stringsAsFactors = FALSE
+)
+
+print(data2)
+
+```
+
+As you will notice these firms have 1 variable in common (Hospital) and 1 different variable each (data1: Revenue and data 2: Profit). Furthermore these dataframes have 2 observations in common (Giant and Moloch) and 1 different observation each (data1: Mega and data2: Maverick). 
+
+
+
+## Merging
+
+We can now merge the two dataframes.
+
+# using the command `merge()`
+
+
+```{r}
+
+data3 <- merge(data1, data2, by = "Hospital")
+print(data3)
+```
+
+
+As you will probably notice: the command `merge()` only returns the hospitals that are part of both data frames. Please note that when you use merge you only get returned the data that both data frames in common.
+
+## The `join` command of `dplyr`
+
+We advise you to use the join commands of `dplyr`.  With these commands it's easier to control what happens during a merge.
+
+### full_join
+
+When you use `full_join()`, all data points from both dataframes will be merged. Missing values will be represented by `NA`'s .
+
+```{r}
+
+
+fulljoin <- full_join(data1, data2, by = "Hospital")
+print(fulljoin)
+
+```
+
+
+
+### inner_join
+
+`inner_join` is comparable to the command `merge()`.
+
+```{r}
+
+
+innerjoin <- inner_join(data1, data2, by = "Hospital")
+print(innerjoin)
+
+```
+
+
+
+
+### left_join and right_join
+
+`left_join`return all rows from the first mentioned dataframe, and all columns from both dataframes. Rows in the first mentioned dataframe with no match in the second will have NA values in the new columns. 
+
+
+
+```{r}
+
+
+leftjoin <- left_join(data1, data2, by = "Hospital")
+print(leftjoin)
+
+```
+
+
+`right_join()` is the mirror of `left_join()`
+
+
+
+```{r}
+
+
+rightjoin <- right_join(data1, data2, by = "Hospital")
+print(rightjoin)
+
+
+```
+
+
+
+### Information about missings
+
+There are 2 special functions that tell you something about the merged data.
+
+#### anti-join
+
+The command `anti_join` returns the hospitals that are present in the first dataframe, but not in the second. When you want to know which hospitals are present in the second, but not in the first dataframe, you can just switch the order of the dataframes.
+
+
+
+```{r}
+
+
+antijoin <- anti_join(data1, data2, by = "Hospital")
+print(antijoin)
+```
+
+
+
+
+
+
+#### semi-join
+
+The `semi_join()` command returns all hospitals present in the first and the second dataframe.
+
+
+
+```{r}
+
+semijoin <- semi_join(data1, data2, by = "Hospital")
+print(semijoin)
+
+```
+
+
+
+## rbind en cbind
+
+Finally, the commands `cbind()`(column bind) and `rbind()` (row bind) are useful for adding data. Only use these commands when you are sure about the effects. Generally, we advise you not to use these commands.
+
+## cbind
+
+With `cbind()` you paste the data from the second data as a new column to the first dataframe. Please: `cbind()` does not match! Which means that the order of the data is important.
+
+To illustrate this we will first change the order of the second dataframe
+
+```{r}
+data2a <- data2 %>%
+  arrange(-Profit)
+print(data2a)
+```
+
+and the use `cbind()`
+
+```{r}
+
+
+column <- cbind(data1, data2a)
+print(column)
+```
+
+
+
+## rbind
+
+With the command `rbind()` you paste the data from the second dataframe under the data of the first dataframe. The second dataframe needs the same columns as the first dataframe. To illustrate this, we will first create some new data.
+
+
+```{r}
+data1a <- data.frame(
+  Hospital = c("Giga"),
+  Revenue = c("1000")
+)
+print(data1a)
+```
+
+
+
+
+```{r}
+
+row <- rbind(data1, data1a)
+print(row)
+```
+
+# Pivoting
+
+
+Sometimes we need to make wide dataframes long (or long dataframes wide).
+
+
+## For wide to long
+
+We will use the dataframe `innerjoin` (made above) as an example:
+
+
+```{r}
+
+innerjoin
+
+```
+
+We will make this data_frame long. We will use the command `pivot_longer()`:
+
+```{r}
+
+long <- innerjoin %>%
+  pivot_longer(cols = c("Revenue", "Profit"), names_to = "Measure", values_to = "Amount")
+
+long
+
+```
+
+We can make the dataframe `long` wide again with `pivot_wider()`
+
+```{r}
+
+wide <- long %>%
+  pivot_wider(names_from = "Measure", values_from = "Amount")
+
+wide
+
+```
+
+
+
+
+
+
+
+
